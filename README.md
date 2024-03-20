@@ -1,2 +1,2 @@
 # react-jsoncanvas
-A react library to render JSON Canvas
+A React library to render JSON Canvas
