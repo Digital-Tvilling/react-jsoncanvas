@@ -9,7 +9,7 @@ Provide a [Vite](https://vitejs.dev) environment with a proper package.json to r
 
 For now se imports in index.tsx to see the dependencies. Other dependencies being used is [Tailwindcss](https://tailwindcss.com).
 
-React for rendering components, Tailwindcss for styling and [https://d3js.org](D3) for handling zoom and drag/drop in canvas functionality is core in this implementation, and for now react-markdown is being used to render html from markdown.
+React for rendering components, Tailwindcss for styling and [D3](https://d3js.org) for handling zoom and drag/drop in canvas functionality is core in this implementation, and for now react-markdown is being used to render html from markdown.
 
 We aim to minimize use of external css files to keep React components as [composable](https://www.epicweb.dev/full-stack-components) as possible.
 
