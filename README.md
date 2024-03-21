@@ -1,7 +1,19 @@
+
 # react-jsoncanvas
 
 A React library for rendering JSON Canvas. For more information about
 JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
+
+## Current state/todo/needed
+Provide a [Vite]() environment with a proper package.json to run this example in.
+
+For now se imports in index.tsx to see the dependencies. Other dependencies which is not strictly necessary, but is being used is [Tailwindcss]().
+
+We aim to minimize external css files to keep React components as composable as possible.
+
+A lot of functionality is directly taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository
+
+data.content can be a .md file
 
 ## What is react-jsoncanvas?
 
@@ -14,13 +26,11 @@ JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 
 ## How to Use
 
-To get started with `react-jsoncanvas`, ...
+To get started with `react-jsoncanvas`,
 
 ## How to Contribute
 Contributions are welcome! If you're interested in improving react-jsoncanvas, feel free to
-submit pull requests. 
+submit pull requests.
 
 ## License
 react-jsoncanvas is MIT licensed. For more details, see the LICENSE file in the repository.
-
-
