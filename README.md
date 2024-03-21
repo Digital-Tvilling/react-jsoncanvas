@@ -7,7 +7,7 @@ JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 ## Current state/todo/needed
 Provide a [Vite]() environment with a proper package.json to run this example in.
 
-For now se imports in index.tsx to see the dependencies. Other dependencies which is not strictly necessary is [Tailwindcss]().
+For now se imports in index.tsx to see the dependencies. Other dependencies which is not strictly necessary, but is being used is [Tailwindcss]().
 
 We aim to minimize external css files to keep React components as composable as possible.
 
