@@ -13,7 +13,7 @@ React for rendering components, Tailwindcss for styling and [https://d3js.org](D
 
 We aim to minimize use of external css files to keep React components as [https://www.epicweb.dev/full-stack-components](composable) as possible.
 
-A lot of functionality amd logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
+A lot of functionality and logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
 
 data.content can be a .md file
 
