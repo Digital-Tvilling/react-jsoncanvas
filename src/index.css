@@ -1,0 +1,23 @@
+:root {
+  --color-ui-3: #002336;
+}
+
+#canvas-edges {
+  z-index: 150;
+  pointer-events: none;
+  user-select: none;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#canvas-edges path {
+  stroke: var(--color-ui-3);
+  stroke-width: 2;
+  fill: none;
+}
+#arrowhead {
+  fill: var(--color-ui-3);
+}
