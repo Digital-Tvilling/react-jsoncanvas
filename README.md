@@ -29,8 +29,8 @@ data.content can be a .md file
 To get started with `react-jsoncanvas`,
 
 ## How to Contribute
-Contributions are welcome! If you're interested in improving react-jsoncanvas, feel free to
+Contributions are welcome! If you're interested in improving `react-jsoncanvas`, feel free to
 submit pull requests.
 
 ## License
-react-jsoncanvas is MIT licensed. For more details, see the LICENSE file in the repository.
+`react-jsoncanvas` is MIT licensed. For more details, see the LICENSE file in the repository.
