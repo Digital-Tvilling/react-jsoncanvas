@@ -5,13 +5,15 @@ A React library for rendering JSON Canvas. For more information about
 JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 
 ## Current state/todo/needed
-Provide a [Vite]() environment with a proper package.json to run this example in.
+Provide a [Vite](https://vitejs.dev/) environment with a proper package.json to run this example in.
 
-For now se imports in index.tsx to see the dependencies. Other dependencies which is not strictly necessary, but is being used is [Tailwindcss]().
+For now se imports in index.tsx to see the dependencies. Other dependencies being used is [Tailwindcss](https://tailwindcss.com/).
+
+React for rendering components, Tailwindcss for styling and [https://d3js.org/](D3) for handling zoom and drag/drop functionality is core, and for now react-markdown is being used to render html from markdown
 
 We aim to minimize external css files to keep React components as composable as possible.
 
-A lot of functionality is directly taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository
+A lot of functionality amd logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
 
 data.content can be a .md file
 
