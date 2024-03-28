@@ -1,11 +1,17 @@
+
+export type Direction = "top" | "right" | "left" | "bottom";
+export type MarkerType = "none" | "arrow";
+
 export interface Edge {
   id: string;
   fromNode: string;
-  fromSide: string;
-  fromEnd: string;
+  fromSide?: Direction;
+  fromEnd?: MarkerType;
   toNode: string;
-  toSide: string;
-  toEnd: string;
+  toSide?: Direction;
+  toEnd?: MarkerType;
+  color?: string;
+  label?: string;
 }
 
 export interface Node {
