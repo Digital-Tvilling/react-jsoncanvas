@@ -10,6 +10,7 @@ function App() {
       fromEnd: "arrow",
       toNode: "node2",
       toSide: "left",
+      color: "blue"
     },
     {
       id: "edge2",
@@ -19,6 +20,7 @@ function App() {
       toNode: "node3",
       toSide: "top",
       toEnd: "arrow",
+      color: "red"
     },
     {
       id: "edge3",
@@ -28,6 +30,7 @@ function App() {
       toNode: "node4",
       toSide: "top",
       toEnd: "none",
+      color: "#008000"
     },
     {
       id: "edge4",
