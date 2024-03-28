@@ -68,8 +68,7 @@ export function Canvas({ content }: CanvasProps) {
           "path"
         );
         path.setAttribute("d", d);
-        path.setAttribute("stroke", "black");
-        path.setAttribute("fill", "none");
+        path.setAttribute("stroke", edge.color ? edge.color : "black");
         if (edge.toEnd === "arrow") {
           path.setAttribute("marker-end", "url(#arrowhead)");
         }
@@ -131,7 +130,7 @@ export function Canvas({ content }: CanvasProps) {
   return (
     <section
       ref={containerRef}
-      className="min-w-screen bg-silver-100 text-preussianBlue-900 relative h-full min-h-screen w-full"
+      className="min-w-screen bg-silver-100 text-blue-900 relative h-full min-h-screen w-full"
       style={{
         backgroundSize: `calc(${scale} * 20px) calc(${scale} * 20px)`,
         backgroundPosition: `calc(${scale} - 19px) calc(${scale} - 19px)`,
@@ -158,7 +157,7 @@ export function Canvas({ content }: CanvasProps) {
           <div
             id={node.id}
             key={node.id}
-            className="border-silver-300 node active:text-preussianBlue-800 absolute overflow-hidden rounded border-[1px] border-solid bg-white p-2 transition-shadow duration-200 hover:cursor-grab active:cursor-grabbing active:shadow-md"
+            className="border-silver-300 node active:text-blue-800 absolute overflow-hidden rounded border-[1px] border-solid bg-white p-2 transition-shadow duration-200 hover:cursor-grab active:cursor-grabbing active:shadow-md"
             style={{
               // minHeight: `${node.dimensions.height * scale}px`,
               // minWidth: `${node.dimensions.width * scale}px`,

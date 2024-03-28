@@ -20,7 +20,6 @@
 }
 
 #canvas-edges path {
-  stroke: var(--color-ui-3);
   stroke-width: 2;
   fill: none;
 }
