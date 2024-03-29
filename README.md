@@ -42,6 +42,7 @@ I also want to mention that we need to handle the fact that positions from .canv
 - Provides basic structures and components for rendering JSON Canvas.
 
 ## How to Use
+#### As a standalone Application 
 
 To get started with `react-jsoncanvas`, clone the repository with
 
@@ -61,10 +62,46 @@ Start up the development environment
 npm run dev
 ```
 
+#### As a dependency (Experimental)
+You can also import it in your project and use it as local dependency however it will likely only work in a development environment and fail the build process. 
+
+First clone the repository (As it's not available on NPM), ideally in your project root folder.
+```sh
+git clone https://github.com/Digital-Tvilling/react-jsoncanvas.git
+```
+
+You can install the library with a standard install command, but with providing the path to the library folder.
+
+```sh
+npm install ./react-jsoncanvas
+```
+
+You should now be able to see the module imported as a local dependency in your project package.json 
+```json
+"react-jsoncanvas": "file:react-jsoncanvas"
+```
+And be able to use it as any library, eg :
+```
+import { CanvasContent, Canvas, Node, Edge } from 'react-jsoncanvas'
+```
+
+⚠️
+The library is now installed, however Tailwind dependency is not packaged, hence it will not render correctly and you will need to install Tailwind in your project and add this hacky line such that the whole style is correctly rendered when running npm.
+In tailwind.config.js
+```js
+ content: [
+   ...
+    "./react-jsoncanvas/src/*.{js,ts,jsx,tsx}"
+  ],
+
+```
+
+
+
+
 ## How to Contribute
 
-Contributions are welcome! If you're interested in improving `react-jsoncanvas`, feel free to
-submit pull requests.
+Contributions are welcome! If you're interested in improving `react-jsoncanvas`, feel free to submit pull requests.
 
 ## License
 
