@@ -2,7 +2,7 @@ import { drag, select, zoom } from "d3";
 import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./index.css";
-import { CanvasContent } from "./types";
+import { CanvasContent, Direction } from "./types";
 
 export interface CanvasProps {
   content: CanvasContent;
@@ -16,7 +16,7 @@ export function Canvas({ content }: CanvasProps) {
   const [nodes, setNodes] = useState(content.initialNodes);
   const nodesRef = useRef(content.initialNodes);
 
-  function getAnchorPoint(node, side) {
+  function getAnchorPoint(node: HTMLElement, side: Direction) {
     const x = parseInt(node.style.left, 10);
     const y = parseInt(node.style.top, 10);
     const width = node.offsetWidth;
@@ -38,13 +38,14 @@ export function Canvas({ content }: CanvasProps) {
 
   const drawEdges = () => {
     const svgContainer = document.getElementById("edge-paths");
-    svgContainer.innerHTML = ""; // Clear existing edges for redraw
-
+    if(svgContainer){
+      svgContainer.replaceChildren(); // Clear existing edges for redraw
+    }
     content.edges.forEach((edge) => {
       const fromNode = document.getElementById(edge.fromNode);
       const toNode = document.getElementById(edge.toNode);
 
-      if (fromNode && toNode) {
+      if (fromNode && toNode && edge.fromSide && edge.toSide) {
         const fromPoint = getAnchorPoint(fromNode, edge.fromSide);
         const toPoint = getAnchorPoint(toNode, edge.toSide);
         // handle translate
@@ -85,7 +86,6 @@ export function Canvas({ content }: CanvasProps) {
 
   useEffect(() => {
     const container = select(containerRef.current);
-
     const zoomFn = zoom()
       // .scaleExtent([0.5, 5])
       .on("zoom", (event) => {
@@ -99,7 +99,6 @@ export function Canvas({ content }: CanvasProps) {
 
   useEffect(() => {
     const container = select(containerRef.current);
-
     const dragHandler = drag()
       .on("start", (event) => {
         select(event.sourceEvent.target).classed("dragging", true);
