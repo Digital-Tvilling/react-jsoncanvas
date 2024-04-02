@@ -1,8 +1,8 @@
 import { drag, select, zoom } from "d3";
 import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import "./index.css";
 import { CanvasContent, Direction } from "./types";
+import "./index.css";
 
 export interface CanvasProps {
   content: CanvasContent;
@@ -38,7 +38,7 @@ export function Canvas({ content }: CanvasProps) {
 
   const drawEdges = () => {
     const svgContainer = document.getElementById("edge-paths");
-    if(svgContainer){
+    if (svgContainer) {
       svgContainer.replaceChildren(); // Clear existing edges for redraw
     }
     content.edges.forEach((edge) => {
@@ -129,7 +129,7 @@ export function Canvas({ content }: CanvasProps) {
   return (
     <section
       ref={containerRef}
-      className="min-w-screen bg-silver-100 text-blue-900 relative h-full min-h-screen w-full"
+      className="json-canvas"
       style={{
         backgroundSize: `calc(${scale} * 20px) calc(${scale} * 20px)`,
         backgroundPosition: `calc(${scale} - 19px) calc(${scale} - 19px)`,
@@ -156,7 +156,7 @@ export function Canvas({ content }: CanvasProps) {
           <div
             id={node.id}
             key={node.id}
-            className="border-silver-300 node active:text-blue-800 absolute overflow-hidden rounded border-[1px] border-solid bg-white p-2 transition-shadow duration-200 hover:cursor-grab active:cursor-grabbing active:shadow-md"
+            className="node"
             style={{
               // minHeight: `${node.dimensions.height * scale}px`,
               // minWidth: `${node.dimensions.width * scale}px`,
