@@ -33,12 +33,11 @@ p {
 }
 
 #arrowhead {
-  fill: var(--color-ui-3);
+  fill: black;
 }
 
 .json-canvas {
-  --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
+  color: rgb(30 58 138);
   position: relative;
   height: 100%;
   width: 100%;
@@ -54,8 +53,7 @@ p {
   border-radius: 0.25rem;
   border-width: 1px;
   border-color: #e5e7eb;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255);
   border-style: solid;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,13 +62,8 @@ p {
 }
 
 .node:active {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
+  border-color: rgb(30 58 138);
   cursor: grabbing;
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-
 }
 
 .node:hover {
