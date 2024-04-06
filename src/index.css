@@ -1,10 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --color-ui-3: #002336;
   height: 100%;
+  --color-ui-3: #002336;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+p {
+  margin: 0;
 }
 
 #canvas-edges {
@@ -25,5 +33,39 @@
 }
 
 #arrowhead {
-  fill: var(--color-ui-3);
+  fill: black;
+}
+
+.json-canvas {
+  color: rgb(30 58 138);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.node {
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #e5e7eb;
+  background-color: rgb(255 255 255);
+  border-style: solid;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+
+}
+
+.node:active {
+  border-color: rgb(30 58 138);
+  cursor: grabbing;
+}
+
+.node:hover {
+  cursor: grab;
 }

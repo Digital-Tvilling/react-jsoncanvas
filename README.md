@@ -5,7 +5,7 @@ JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 
 ## Current state/todo/needed
 
-React for rendering components, Tailwindcss for styling and [D3](https://d3js.org) for handling zoom and drag/drop in canvas functionality is core in this implementation, and for now react-markdown is being used to render html from markdown.
+React for rendering components and [D3](https://d3js.org) for handling zoom and drag/drop in canvas functionality is core in this implementation, and for now react-markdown is being used to render html from markdown.
 
 We aim to minimize use of external css files to keep React components as [composable](https://www.epicweb.dev/full-stack-components) as possible.
 
@@ -34,7 +34,7 @@ I also want to mention that we need to handle the fact that positions from .canv
 
 ## What is react-jsoncanvas?
 
-`react-jsoncanvas` is a React application designed to facilitate the rendering of JSON Canvas files. It provides a set of React components that interpret and display JSON Canvas data in a visual format, in it's current state it is not a library, rather an example/ some code to use to render a canvas with nodes and edges in .canvas format
+`react-jsoncanvas` is a React application designed to facilitate the rendering of JSON Canvas files. It provides a set of React components that interpret and display JSON Canvas data in a visual format, in it's current state it is not a library, rather an example/some code to use to render a canvas with nodes and edges in .canvas format
 
 ## Features
 
@@ -84,20 +84,6 @@ And be able to use it as any library, eg :
 ```
 import { CanvasContent, Canvas, Node, Edge } from 'react-jsoncanvas'
 ```
-
-⚠️
-The library is now installed, however Tailwind dependency is not packaged, hence it will not render correctly and you will need to install Tailwind in your project and add this hacky line such that the whole style is correctly rendered when running npm.
-In tailwind.config.js
-```js
- content: [
-   ...
-    "./react-jsoncanvas/src/*.{js,ts,jsx,tsx}"
-  ],
-
-```
-
-
-
 
 ## How to Contribute
 

@@ -89,7 +89,7 @@ function App() {
     {
       id: "node5",
       type: "process",
-      data: { label: "Process Node", content: "Another process node" },
+      data: { label: "Process Node", content: "Looks the same without Tailwind" },
       position: { x: 500, y: 100 },
       dimensions: { width: 150, height: 80 },
     },
