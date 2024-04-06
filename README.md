@@ -3,11 +3,20 @@
 A React application that renders data from the JSON Canvas format. For more information about
 JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 
+## What is react-jsoncanvas?
+
+`react-jsoncanvas` is a React application designed to facilitate the rendering of JSON Canvas files. It provides a set of React components that interpret and display JSON Canvas data in a visual format, in it's current state it is not a library, rather an example/some code to use to render a canvas with nodes and edges in .canvas format
+
+## Features
+
+- It aims to be lightweight and easy to integrate with React projects.
+- Provides basic structures and components for rendering JSON Canvas.
+
+![Screenshot of React json canvas](react-canvas.png)
+
 ## Current state/todo/needed
 
 React for rendering components and [D3](https://d3js.org) for handling zoom and drag/drop in canvas functionality is core in this implementation, and for now react-markdown is being used to render html from markdown.
-
-We aim to minimize use of external css files to keep React components as [composable](https://www.epicweb.dev/full-stack-components) as possible.
 
 A lot of functionality and logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
 
@@ -31,15 +40,6 @@ export interface Node {
 Also we need to handle width and height, if provided.
 
 I also want to mention that we need to handle the fact that positions from .canvas made in t.ex Obsidian can have negative values, which this original solution is currently not handling.
-
-## What is react-jsoncanvas?
-
-`react-jsoncanvas` is a React application designed to facilitate the rendering of JSON Canvas files. It provides a set of React components that interpret and display JSON Canvas data in a visual format, in it's current state it is not a library, rather an example/some code to use to render a canvas with nodes and edges in .canvas format
-
-## Features
-
-- It aims to be lightweight and easy to integrate with React projects.
-- Provides basic structures and components for rendering JSON Canvas.
 
 ## How to Use
 #### As a standalone Application 
