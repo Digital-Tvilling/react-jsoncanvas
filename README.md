@@ -11,22 +11,7 @@ We aim to minimize use of external css files to keep React components as [compos
 
 A lot of functionality and logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
 
-data.content can be a .md file
-
-The data structure will need to change to align with the actual jsoncanvas spec in a future PR, If no one beats us to it.
-
-```
-export interface Node {
-  id: string
-  type: string
-  label?: string
-  file: string
-  x: number
-  y: number
-  width: number
-  height: number
-}
-```
+data.content can be a .md file.
 
 Also we need to handle width and height, if provided.
 
