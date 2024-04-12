@@ -20,7 +20,8 @@ export interface Node {
   data: { label: string; content: string };
   x: number,
   y: number,
-  dimensions: { width: number; height: number };
+  width: number; 
+  height: number;
 }
 
 export interface CanvasContent {
