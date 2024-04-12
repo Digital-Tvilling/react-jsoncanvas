@@ -18,7 +18,8 @@ export interface Node {
   id: string;
   type: string;
   data: { label: string; content: string };
-  position: { x: number; y: number };
+  x: number,
+  y: number,
   dimensions: { width: number; height: number };
 }
 

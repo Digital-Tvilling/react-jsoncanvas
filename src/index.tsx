@@ -108,12 +108,10 @@ export function Canvas({ content }: CanvasProps) {
         nodesRef.current = nodesRef.current.map((n) =>
           n.id === nodeId
             ? {
-                ...n,
-                position: {
-                  x: n.position.x + event.dx,
-                  y: n.position.y + event.dy,
-                },
-              }
+              ...n,
+              x: n.x + event.dx,
+              y: n.y + event.dy,
+            }
             : n
         );
         // Force update to reflect the changes in the UI
@@ -162,8 +160,8 @@ export function Canvas({ content }: CanvasProps) {
               // minWidth: `${node.dimensions.width * scale}px`,
               transform: `translate(${translateX}px, ${translateY}px)`,
               // transform: `scale(${scale})`,
-              left: `${node.position.x * scale + 20}px`,
-              top: `${node.position.y * scale + 20}px`,
+              left: `${node.x * scale + 20}px`,
+              top: `${node.y * scale + 20}px`,
               fontSize: `${scale * 12}px`,
               lineHeight: `${scale * 16}px`,
             }}
