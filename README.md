@@ -12,7 +12,7 @@ JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 - It aims to be lightweight and easy to integrate with React projects.
 - Provides basic structures and components for rendering JSON Canvas.
 
-![Screenshot of React json canvas](react-canvas.png)
+![Screenshot of React json canvas](react-canvas2.png)
 
 ## Current state/todo/needed
 
@@ -20,14 +20,10 @@ React for rendering components and [D3](https://d3js.org) for handling zoom and 
 
 A lot of functionality and logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
 
-data.content can be a .md file.
-
-Also we need to handle width and height, if provided.
-
-I also want to mention that we need to handle the fact that positions from .canvas made in t.ex Obsidian can have negative values, which this original solution is currently not handling.
+Current focus is as a jsoncanvas viewer/reader
 
 ## How to Use
-#### As a standalone Application 
+#### As a standalone Application
 
 To get started with `react-jsoncanvas`, clone the repository with
 
@@ -48,7 +44,7 @@ npm run dev
 ```
 
 #### As a dependency (Experimental)
-You can also import it in your project and use it as local dependency however it will likely only work in a development environment and fail the build process. 
+You can also import it in your project and use it as local dependency however it will likely only work in a development environment and fail the build process.
 
 First clone the repository (As it's not available on NPM), ideally in your project root folder.
 ```sh
@@ -61,7 +57,7 @@ You can install the library with a standard install command, but with providing 
 npm install ./react-jsoncanvas
 ```
 
-You should now be able to see the module imported as a local dependency in your project package.json 
+You should now be able to see the module imported as a local dependency in your project package.json
 ```json
 "react-jsoncanvas": "file:react-jsoncanvas"
 ```
