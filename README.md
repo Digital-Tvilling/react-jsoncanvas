@@ -23,6 +23,9 @@ A lot of functionality and logic is taken from the [jsoncanvas](https://github.c
 Current focus is as a jsoncanvas viewer/reader
 
 ## How to Use
+
+Copy/Paste the features/behaviour you need or follow steps below:
+
 #### As a standalone Application
 
 To get started with `react-jsoncanvas`, clone the repository with
