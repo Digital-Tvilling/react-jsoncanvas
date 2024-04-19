@@ -28,15 +28,16 @@ p {
 }
 
 #canvas-edges path {
-  stroke-width: 2;
   fill: none;
+  stroke: lightgray;
 }
 
-#arrowhead {
-  fill: black;
+.arrowhead {
+  fill: lightgray;
 }
 
 .json-canvas {
+  background-color: "rgb(255 255 100)"
   color: rgb(30 58 138);
   position: relative;
   height: 100%;
@@ -47,9 +48,7 @@ p {
 
 .node {
   position: absolute;
-  overflow: hidden;
   margin: 0;
-  padding: 0.5rem;
   border-radius: 0.25rem;
   border-width: 1px;
   border-color: #e5e7eb;
@@ -59,6 +58,22 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
 
+}
+
+.node-label {
+  position: absolute;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: lightgray;
+}
+
+.node-content {
+  height: 100%;
+  overflow: auto;
+}
+
+.markdown {
+  padding: 0 1rem;
 }
 
 .node:active {
