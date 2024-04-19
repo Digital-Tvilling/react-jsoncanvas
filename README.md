@@ -18,7 +18,7 @@ JSON Canvas, visit [jsoncanvas.org](https://jsoncanvas.org).
 
 React for rendering components and [D3](https://d3js.org) for handling zoom and drag/drop in canvas functionality is core in this implementation, and for now react-markdown is being used to render html from markdown.
 
-A lot of functionality and logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and if needed will be refactored to align more with react standards.
+A lot of functionality and logic is taken from the [jsoncanvas](https://github.com/obsidianmd/jsoncanvas) repository and is being refactored to align more with React standards.
 
 Current focus is as a jsoncanvas viewer/reader
 
